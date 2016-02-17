@@ -13,21 +13,28 @@
 	</head>
 
 	<body ng-app="myApp">
-		<div class='page-header' style="background-color:#33adff;">
-			<h1>
-				AngularJS
-				<small>Example for practice</small>
-			</h1>
-		</div>
 		<div calss="container">
+			<div class="row" style="background-color:#33adff; width:100%;">
+				<div class="col-md-12">
+					<div class='navbar-header' >
+						<h1>
+							AngularJS
+							<small>Example for practice</small>
+						</h1>
+					</div>
+				</div>
+			</div>
 			<div clas="row">
 				<div class="col-md-2">
-					<p><a href='#Animation'>Animation</a></p>
-					<p><a href='#Change case'>Change case</a></p>
-					<p><a href='#Include file content'>Include file content</a></p>
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href='#Animation'>Animation</a></li>
+						<li><a href='#Change case'>Change case</a></li>
+						<li><a href='#Include file content'>Include file content</a></li>
+					</ul>
+					
 				</div>
-				<div class="col-md-10">
-					<div ng-view></div>
+				<div class="col-md-10" >
+					<div ng-view "></div>
 				</div>
 			</div>
 		</div>
