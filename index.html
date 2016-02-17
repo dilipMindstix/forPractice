@@ -1,6 +1,35 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+		<script type="text/javascript" src="ngLibFile/angular-route.js"></script>
+		<script type="text/javascript" src="controller/app.js"></script>
+
+		<link rel="stylesheet" type="text/css" href='style/animate.css'></style>
 	</head>
-	<body>
+
+	<body ng-app="myApp">
+		<div class='page-header' style="background-color:#33adff;">
+			<h1>
+				AngularJS
+				<small>Example for practice</small>
+			</h1>
+		</div>
+		<div calss="container">
+			<div clas="row">
+				<div class="col-md-2">
+					<p><a href='#Animation'>Animation</a></p>
+					<p><a href='#Change case'>Change case</a></p>
+					<p><a href='#Include file content'>Include file content</a></p>
+				</div>
+				<div class="col-md-10">
+					<div ng-view></div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
